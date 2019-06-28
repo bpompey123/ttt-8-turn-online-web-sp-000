@@ -46,7 +46,7 @@ def turn(board)
   input = input_to_index(input)
 
   if valid_move?(board, input)
-    update_array(board, input, value = "X")
+    puts move(board, input, value = "X")
   else
     turn(board)
   end
